@@ -22,7 +22,7 @@ void main() {
   while (countDown >= 0) {
     print(countDown);
     countDown = countDown - 1;
-    if (countdown < 0) {
+    if (countDown < 0) {
       break;
     }
   }
