@@ -13,7 +13,6 @@ void main() {
   int step0 = int.parse(stdin.readLineSync());
 
   if(step0 > 2 && step0 < 10) {
-    print('Thank you!');
     print('${step0} * 2 equals');
     print(step0 * 2);
     int step1 = step0 * 2 + 5;
@@ -22,6 +21,7 @@ void main() {
     int step2 = step1 * 50;
     print('${step0} * 2 + 5 * 50 equals;');
     print(step1 * 50);
+    print('Thank you!');
   } else {
     print('${step0} is wrong!');
   }

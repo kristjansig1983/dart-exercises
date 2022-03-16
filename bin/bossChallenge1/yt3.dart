@@ -18,6 +18,7 @@ void main() {
     int step1 = step0 * 2 + 5;
     print('${step0} * 2 + 5 equals:');
     print(step1);
+    print('Thank you!');
   } else {
     print('${step0} is wrong!');
   }
