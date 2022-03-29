@@ -5,5 +5,8 @@
 
 import 'dart:io';
 
-void main(){
+void main() {
+  print('Enter two numbers');
+  int input1 = int.tryParse(stdin.readLineSync());
+  int input2 = int.tryParse(stdin.readLineSync());
 }

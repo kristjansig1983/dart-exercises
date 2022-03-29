@@ -24,15 +24,16 @@ void main() {
 
   print('Enter a number between 2 and 10:');
   int step0 = int.parse(stdin.readLineSync());
+  int bias = 0;
+  int step1 = step0 * 2 + 5;
+  int step2 = step1 * 50;
 
   if(step0 > 2 && step0 < 10) {
     print('Thank you!');
     print('${step0} * 2 equals');
     print(step0 * 2);
-    int step1 = step0 * 2 + 5;
     print('${step0} * 2 + 5 equals:');
     print(step1);
-    int step2 = step1 * 50;
     print('${step0} * 2 + 5 * 50 equals;');
     print(step1 * 50);
   } else {
@@ -42,11 +43,15 @@ void main() {
   String answer = stdin.readLineSync();
 
   if(answer.toLowerCase() == 'yes') {
+    bias = 1770;
     print('Sorry I missed it');
   } else if(answer.toLowerCase() == 'no'){
+    bias = 1769;
     print('Am I invited?');
   } else {
     print('Run the program again');
   }
+
+
 
 }

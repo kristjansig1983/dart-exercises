@@ -11,7 +11,25 @@
 
  */
 import 'dart:io';
+import 'dart:convert';
 
 void main() {
+
+  print('Enter a number between 0 to 4');
+  String intputNumber = stdin.readLineSync();
+
+  if(intputNumber == '0'){
+    print('add');
+  } else if(intputNumber == '1'){
+    print('subtract');
+  } else if(intputNumber == '2'){
+    print('multiply');
+  } else if(intputNumber == '3'){
+    print('divide');
+  } else if(intputNumber == '4'){
+    print('modulo');
+  }
+
+
 
 }
