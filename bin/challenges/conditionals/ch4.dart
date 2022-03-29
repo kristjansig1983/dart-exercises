@@ -27,4 +27,27 @@ import 'dart:io';
 
 void main() {
 
+  print('Enter two numbers');
+  int input1 = int.tryParse(stdin.readLineSync());
+  int input2 = int.tryParse(stdin.readLineSync());
+  print('Enter a number between 0 to 4');
+  String intputNumber = stdin.readLineSync();
+
+  if(intputNumber == '0'){
+    print('add');
+    print('$input1 + $input2 = ${input1 + input2}');
+  } else if(intputNumber == '1'){
+    print('subtract');
+    print('$input1 - $input2 = ${input1 - input2}');
+  } else if(intputNumber == '2'){
+    print('multiply');
+    print('$input1 * $input2 = ${input1 * input2}');
+  } else if(intputNumber == '3'){
+    print('divide');
+    print('$input1 / $input2 = ${input1 / input2}');
+  } else if(intputNumber == '4'){
+    print('modulo');
+    print('$input1 % $input2 =  ${input1 % input2}');
+  }
+
 }
